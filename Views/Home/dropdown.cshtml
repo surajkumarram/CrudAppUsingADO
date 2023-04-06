@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "dropdown";
+}
+
+<h2>dropdown</h2>
+<select class="form-select">
+    @foreach (var item in ViewData["EmpList"] as List<string>)
+    {
+        <option>@item</option>
+    }
+</select>
+
